@@ -24,6 +24,7 @@ const extensions = [
 
 export default defineConfig(({ mode }) => {
   return {
+    base: mode === 'production' ? '/root-url-demo/' : '/',
     resolve: {
       extensions,
     },
